@@ -184,7 +184,7 @@ bool Game::checkWin(vector<array<Square *, 3>> combinaison_list)
     for (int index = 0; index < combinaison_list.size(); index++)
     {
 
-        array<Square *, 4> combinaison = combinaison_list[index];
+        array<Square *, 3> combinaison = combinaison_list[index];
         if (combinaison[0]->getToken().has_value() &&
             combinaison[1]->getToken().has_value() &&
             combinaison[2]->getToken().has_value() &&
